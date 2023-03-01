@@ -29,3 +29,27 @@ def length_of_string(string):
 def join_string(word_1, word_2):
     joint = word_1 + word_2
     return joint
+
+def add_string_as_number(string_1, string_2):
+    combined = int(string_1) + int(string_2)
+    return combined
+
+def number_to_full_month_name(month_id):
+
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    return months [month_id - 1]
+
+def number_to_short_month_name(month_id):
+    
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    getmonth = months [month_id - 1]
+    return getmonth [0:3]
+
+def cube_volume(side):
+    return pow(side, 3) 
+
+def reverse_string(string):
+    return string[::-1]
+
+def convert_fahrenheit(fahrenheit):
+    return (fahrenheit-32) * 5 / 9
